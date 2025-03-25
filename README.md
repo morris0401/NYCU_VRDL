@@ -41,4 +41,4 @@ python testing.py
 
 ## Performance snapshot
 A shapshot of the leaderboard
-![image](assets/leaderboard.jpg)
+![image](assets/leaderboard.png)
