@@ -1,6 +1,6 @@
 # NYCU Computer Vision 2025 Spring HW1
-**StudentID**: 111550177 \
-**Name**: Ting-Lin Wu (吳定霖)
+**StudentID** : **111550177** \
+**Name** : **Ting-Lin Wu (吳定霖)**
 
 ## Introduction
 This assignment is an image classification competition. It consists of photos from 100 different categories, where each category represents a specific biological species. The dataset includes a total of 21,024 images for training and validation, along with 2,344 test images.
