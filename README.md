@@ -3,8 +3,8 @@ StudentID: 111550177 \
 Name: Ting-Lin Wu (吳定霖)
 
 ## Introduction
-This assignment is an image classification competition. It consists of photos from 100 different categories, where each category represents a specific biological species. The dataset includes a total of 21,024 images for training and validation, along with 2,344 test images.  
-The model is restricted to using ResNet as the backbone, including some of its variants (such as ResNeXt, ResNeSt, etc.). Pretrained weights trained on ImageNet can be utilized. The model size is limited to 100 million parameters. Additionally, ensemble learning can be applied to aggregate the outputs of multiple models.
+This assignment is an image classification competition. It consists of photos from 100 different categories, where each category represents a specific biological species. The dataset includes a total of 21,024 images for training and validation, along with 2,344 test images.📊
+The model is restricted to using ResNet as the backbone, including some of its variants (such as ResNeXt, ResNeSt, etc.). Pretrained weights trained on ImageNet can be utilized. The model size is limited to 100 million parameters. Additionally, ensemble learning can be applied to aggregate the outputs of multiple models.🔧
 
 
 ## How to install
