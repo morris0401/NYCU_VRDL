@@ -21,7 +21,7 @@ conda activate VRDL_hw1
 pip install -r requirements.txt
 ```
 
-How to install dataset
+## How to install dataset
 ```bash
 gdown --id 1fx4Z6xl5b6r4UFkBrn5l0oPEIagZxQ5u
 tar -xvzf hw1-data.tar.gz
@@ -39,6 +39,9 @@ python inference.py
 # Testing
 python testing.py
 ```
+
+## Model Weight Download
+[https://drive.google.com/file/d/16hXRgvPhdSMpYmQfx9JQ88v4HSfgqEbC/view?usp=sharing](https://drive.google.com/file/d/16hXRgvPhdSMpYmQfx9JQ88v4HSfgqEbC/view?usp=sharing)
 
 ## Performance snapshot
 A shapshot of the leaderboard
