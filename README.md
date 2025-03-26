@@ -23,6 +23,8 @@ pip install -r requirements.txt
 
 ## How to install dataset
 ```bash
+mkdir dataset
+cd dataset
 gdown --id 1fx4Z6xl5b6r4UFkBrn5l0oPEIagZxQ5u
 tar -xvzf hw1-data.tar.gz
 ```
