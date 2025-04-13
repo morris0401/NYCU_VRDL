@@ -43,7 +43,7 @@ python ./code/test.py
 ```
 
 ## Model Weight Download
-[https://drive.google.com/file/d/16hXRgvPhdSMpYmQfx9JQ88v4HSfgqEbC/view?usp=sharing](https://drive.google.com/file/d/16hXRgvPhdSMpYmQfx9JQ88v4HSfgqEbC/view?usp=sharing)
+[https://drive.google.com/file/d/1RJi2zTRmbzm3LwWCrUEm0TPFAzCNgq7g/view?usp=sharing](https://drive.google.com/file/d/1RJi2zTRmbzm3LwWCrUEm0TPFAzCNgq7g/view?usp=sharing)
 
 ## Performance snapshot
 A shapshot of the leaderboard
