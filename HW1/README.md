@@ -13,7 +13,7 @@ How to install dependences
 ```bash
 # clone this repo
 git clone https://github.com/morris0401/NYCU_VRDL.git
-cd Suzhou-Numerals-Sequence-Recognition
+cd NYCU_VRDL/HW1
 
 # create environment
 conda create -n VRDL_hw1 python=3.9

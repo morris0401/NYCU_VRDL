@@ -3,9 +3,12 @@
 **Name** : **Ting-Lin Wu (吳定霖)**
 
 ## Introduction
-This assignment is an image classification competition. It consists of photos from 100 different categories, where each category represents a specific biological species. The dataset includes a total of 21,024 images for training and validation, along with 2,344 test images.
+This assignment is an object detection competition. It consists of some objects in each photo from 10 different categories, where each category represents a specific decimal digit in some scenes, from 0 to 9. The dataset includes a total of 30,062/3,340 images for training and validation, along with 13,068 test images.  
 
-The model is restricted to using ResNet as the backbone, including some of its variants (such as ResNeXt, ResNeSt, etc.). Pretrained weights trained on ImageNet can be utilized. The model size is limited to 100 million parameters. Additionally, ensemble learning can be applied to aggregate the outputs of multiple models.
+There are two tasks in this competition. Task 1 is predicting the class and bounding box of each digit in the image. Task 2 is predicting all digits in the images. When doing task 2, you can only use the results from task 1
+
+The model is restricted to using Faster R-CNN as the model. The model should contain 3 components: (1) The backbone to extract features. (2) RPN (Region Proposal Network) to generate regions of interest. (3) Heads to predict bounding box or classify the object category. Pretrained weight can be utilized. There are no model size limitations.
+
 
 
 ## How to install
@@ -13,11 +16,11 @@ How to install dependences
 ```bash
 # clone this repo
 git clone https://github.com/morris0401/NYCU_VRDL.git
-cd Suzhou-Numerals-Sequence-Recognition
+cd NYCU_VRDL/HW2
 
 # create environment
-conda create -n VRDL_hw1 python=3.9
-conda activate VRDL_hw1
+conda create -n VRDL_hw2 python=3.9
+conda activate VRDL_hw2
 pip install -r requirements.txt
 ```
 
@@ -25,21 +28,18 @@ pip install -r requirements.txt
 ```bash
 mkdir dataset
 cd dataset
-gdown --id 1fx4Z6xl5b6r4UFkBrn5l0oPEIagZxQ5u
-tar -xvzf hw1-data.tar.gz
+gdown --id 13JXJ_hIdcloC63sS-vF3wFQLsUP1sMz5
+tar -xvzf nycu-hw2-data.tar.gz
 ```
 
 ## How to run
 How to execute the code
 ```
 # Training
-python train.py
-
-# Validation
-python inference.py
+python ./code/train.py
 
 # Testing
-python testing.py
+python ./code/test.py
 ```
 
 ## Model Weight Download
