@@ -9,7 +9,7 @@ There are two tasks in this competition. Task 1 is predicting the class and boun
 
 The model is restricted to using Faster R-CNN as the model. The model should contain 3 components: (1) The backbone to extract features. (2) RPN (Region Proposal Network) to generate regions of interest. (3) Heads to predict bounding box or classify the object category. Pretrained weight can be utilized. There are no model size limitations.
 
-
+This github repository is modified from [https://github.com/GirinChutia/FasterRCNN-Torchvision-FineTuning/tree/main](https://github.com/GirinChutia/FasterRCNN-Torchvision-FineTuning/tree/main)
 
 ## How to install
 How to install dependences
