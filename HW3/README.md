@@ -49,5 +49,7 @@ A shapshot of the leaderboard
 
 ## Reference 
 [1] K. He, G. Gkioxari, P. Dollár, and R. B. Girshick, ‘Mask R-CNN’, CoRR, vol. abs/1703.06870, 2017.
+
 [2] S. Ren, K. He, R. B. Girshick, and J. Sun, ‘Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks’, CoRR, vol. abs/1506.01497, 2015.
+
 [3] O. Russakovsky et al., ‘ImageNet Large Scale Visual Recognition Challenge’, CoRR, vol. abs/1409.0575, 2014.
