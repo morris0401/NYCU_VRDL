@@ -3,9 +3,8 @@
 **Name** : **Ting-Lin Wu (吳定霖)**
 
 ## Introduction
-This assignment focuses on the task of instance segmentation in colored medical images. The dataset contains colored medical images with instances of 4 different types of cells (class1, class2, class3, and class4). The dataset consists of 209 images for training and validation and 101 images for testing. The raw images and masks are provided in .tif format, requiring data processing for model training and evaluation.
-The primary goal of this assignment is to train instance segmentation models to predict the segmentation masks for each instance of the target cells. Predicted masks need to be converted into a specific submission format.
-For this task, we are required to develop a model based on Mask R-CNN [1]. The model should typically comprise key components: (1) The backbone responsible for extracting feature maps from the input images. (2) The Region Proposal Network (RPN) [3] to generate regions of interest that potentially contain objects. (3) The heads, which extend the object detection heads of Faster R-CNN [2] to predict the bounding box, class, and importantly, a segmentation mask for each proposed region. Pretrained weights, specifically from ImageNet [3], are permitted. A key constraint for this assignment is that the total number of trainable parameters in the model must be less than 200 million.
+This assignment is an image restoration competition, focusing on restoring images degraded by two types of atmospheric noise: rain and snow. The dataset includes 1600 degraded images per type (rain and snow) and their corresponding clean images for training and validation, along with 100 degraded test images (50 per type, named 0.png to 99.png) with unspecified degradation types. The target is to produce clean images corresponding to each degraded test image, evaluated using Peak Signal-to-Noise Ratio (PSNR) [2] on a private leaderboard.
+The task requires training a single model to handle both rain and snow degradations. The model is restricted to using PromptIR [1] as the base architecture, a vision-based model designed for blind image restoration. PromptIR consists of three main components: (1) a backbone to extract multi-scale features from degraded images, (2) a prompt module with tunable parameters to encode degradation-specific information, and (3) a restoration head to reconstruct clean images. Unlike traditional methods like AirNet [4], which rely on contrastive learning [5] and additional encoders, PromptIR leverages prompts to efficiently adapt to multiple degradation types, as required by the assignment. There are no model size limitations, but external data and pretrained weights are prohibited to ensure fair training from scratch.
 
 
 ## How to install
@@ -13,7 +12,7 @@ How to install dependences
 ```bash
 # clone this repo
 git clone https://github.com/morris0401/NYCU_VRDL.git
-cd NYCU_VRDL/HW3
+cd NYCU_VRDL/HW4/PromptIR_code/
 
 # create environment
 conda create -n VRDL_hw3 python=3.11
@@ -48,9 +47,12 @@ A shapshot of the leaderboard
 ![image](assets/leaderboard.png)
 
 ## Reference 
-[1] K. He, G. Gkioxari, P. Dollár, and R. B. Girshick, ‘Mask R-CNN’, CoRR, vol. abs/1703.06870, 2017.
-[2] S. Ren, K. He, R. B. Girshick, and J. Sun, ‘Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks’, CoRR, vol. abs/1506.01497, 2015.
-[3] O. Russakovsky et al., ‘ImageNet Large Scale Visual Recognition Challenge’, CoRR, vol. abs/1409.0575, 2014.
+[1] V. Potlapalli, S. W. Zamir, S. H. Khan, and F. Shahbaz Khan, ‘Promptir: Prompting for all-in-one image restoration’, Advances in Neural Information Processing Systems, vol. 36, pp. 71275–71293, 2023.
+[2] F. A. Fardo, V. H. Conforto, F. C. de Oliveira, and P. S. Rodrigues, ‘A formal evaluation of PSNR as quality measurement parameter for image segmentation algorithms’, arXiv preprint arXiv:1605. 07116, 2016.
+[3] Z. Wang, A. C. Bovik, H. R. Sheikh, and E. P. Simoncelli, ‘Image quality assessment: from error visibility to structural similarity’, IEEE Transactions on Image Processing, vol. 13, no. 4, pp. 600–612, 2004.
+[4] E. Chee and Z. Wu, ‘Airnet: Self-supervised affine registration for 3d medical images using neural networks’, arXiv preprint arXiv:1810. 02583, 2018.
+[5] T. Chen, S. Kornblith, M. Norouzi, and G. Hinton, ‘A simple framework for contrastive learning of visual representations’, in International conference on machine learning, 2020, pp. 1597–1607.
+
 
 ## Installation and Data Preparation
 
