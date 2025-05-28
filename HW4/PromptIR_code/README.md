@@ -100,6 +100,7 @@ python demo_tta.py --test_path './test/demo/' --output_path './output/demo/'
 
 ## Model Weight Download
 [https://drive.google.com/file/d/1-XqU5Z5Wgs2aIF5MskEflFBICuu2eUlz/view?usp=sharing](https://drive.google.com/file/d/1-XqU5Z5Wgs2aIF5MskEflFBICuu2eUlz/view?usp=sharing)
+
 You can place the model weight in the './ckpt/' folder
 
 ## Performance snapshot
@@ -108,9 +109,13 @@ A shapshot of the leaderboard
 
 ## Reference 
 [1] V. Potlapalli, S. W. Zamir, S. H. Khan, and F. Shahbaz Khan, ‘Promptir: Prompting for all-in-one image restoration’, Advances in Neural Information Processing Systems, vol. 36, pp. 71275–71293, 2023.
+
 [2] F. A. Fardo, V. H. Conforto, F. C. de Oliveira, and P. S. Rodrigues, ‘A formal evaluation of PSNR as quality measurement parameter for image segmentation algorithms’, arXiv preprint arXiv:1605. 07116, 2016.
+
 [3] Z. Wang, A. C. Bovik, H. R. Sheikh, and E. P. Simoncelli, ‘Image quality assessment: from error visibility to structural similarity’, IEEE Transactions on Image Processing, vol. 13, no. 4, pp. 600–612, 2004.
+
 [4] E. Chee and Z. Wu, ‘Airnet: Self-supervised affine registration for 3d medical images using neural networks’, arXiv preprint arXiv:1810. 02583, 2018.
+
 [5] T. Chen, S. Kornblith, M. Norouzi, and G. Hinton, ‘A simple framework for contrastive learning of visual representations’, in International conference on machine learning, 2020, pp. 1597–1607.
 
 
