@@ -103,6 +103,9 @@ python demo_tta.py --test_path './test/demo/' --output_path './output/demo/'
 
 You can place the model weight in the './ckpt/' folder
 
+## Additional Experiments
+You should replace the file in the `./Additional Experiments/Add X` with the file in the main code, and then run it to get the additional experiments results.
+
 ## Performance snapshot
 A shapshot of the leaderboard
 ![image](assets/leaderboard.png)
